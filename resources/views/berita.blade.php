@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="mt-5">
-    @foreach ($data_berita as $berita)
+    @foreach (($beritas ?? $data_berita) as $berita)
         <h2>
             <a href="/berita/{{ $berita['slug'] }}">
                 {{ $berita['judul'] }}
